@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCoder - Emircan Sazlı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #007BFF;
+            margin-top: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        textarea {
+            width: 80%;
+            height: 120px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        pre {
+            text-align: left;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: 20px auto;
+            overflow-x: auto;
+        }
+        footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+        .footer-link {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python Kod Üreten Asistan</h1>
+
+    <div class="container">
+        <form method="POST">
+            <textarea name="prompt" placeholder="Bir şey yazın..."></textarea><br>
+            <input type="submit" value="Gönder">
+        </form>
+
+        {% if title %}
+            <h2>Başlık: {{ title }}</h2>
+            <pre>{{ code }}</pre>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>Geliştiren: <span style="font-weight: bold;">Emircan Sazlı</span></p>
+        <p><a href="https://dexabilisim.com" class="footer-link">www.dexabilisim.com</a></p>
+    </footer>
+</body>
+</html>
